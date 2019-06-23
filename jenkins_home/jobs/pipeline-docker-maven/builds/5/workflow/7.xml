@@ -1,0 +1,121 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@3.2">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.63">
+    <parentIds>
+      <string>6</string>
+    </parentIds>
+    <id>7</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.scm.GenericSCMStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.63">
+      <arguments>
+        <entry>
+          <string>scm</string>
+          <org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable plugin="structs@1.17">
+            <arguments>
+              <entry>
+                <string>doGenerateSubmoduleConfigurations</string>
+                <boolean>false</boolean>
+              </entry>
+              <entry>
+                <string>extensions</string>
+                <list/>
+              </entry>
+              <entry>
+                <string>branches</string>
+                <list>
+                  <map>
+                    <entry>
+                      <string>name</string>
+                      <wf.a.ArgumentsAction_-NotStoredReason>MASKED_VALUE</wf.a.ArgumentsAction_-NotStoredReason>
+                    </entry>
+                  </map>
+                </list>
+              </entry>
+              <entry>
+                <string>submoduleCfg</string>
+                <list/>
+              </entry>
+              <entry>
+                <string>userRemoteConfigs</string>
+                <list>
+                  <map>
+                    <entry>
+                      <string>url</string>
+                      <wf.a.ArgumentsAction_-NotStoredReason>MASKED_VALUE</wf.a.ArgumentsAction_-NotStoredReason>
+                    </entry>
+                    <entry>
+                      <string>credentialsId</string>
+                      <string>b49dd3af-e316-410b-9867-252882d01189</string>
+                    </entry>
+                  </map>
+                </list>
+              </entry>
+            </arguments>
+          </org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>false</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.33">
+      <startTime>1558318316968</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+    <wf.a.ErrorAction plugin="workflow-api@2.33">
+      <error class="hudson.plugins.git.GitException" plugin="git-client@2.7.6">
+        <detailMessage>Could not checkout 3cf8b77152356324d496b919e90b1c6c4aa0d675</detailMessage>
+        <cause class="hudson.plugins.git.GitException">
+          <detailMessage>Command &quot;git checkout -f 3cf8b77152356324d496b919e90b1c6c4aa0d675&quot; returned status code 1:
+stdout: 
+stderr: error: unable to unlink old &apos;java-app/target/classes/com/mycompany/app/App.class&apos;: Permission denied
+error: unable to unlink old &apos;java-app/target/maven-archiver/pom.properties&apos;: Permission denied
+error: unable to unlink old &apos;java-app/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst&apos;: Permission denied
+error: unable to unlink old &apos;java-app/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst&apos;: Permission denied
+error: unable to unlink old &apos;java-app/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst&apos;: Permission denied
+error: unable to unlink old &apos;java-app/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst&apos;: Permission denied
+error: unable to unlink old &apos;java-app/target/my-app-1.0-SNAPSHOT.jar&apos;: Permission denied
+error: unable to unlink old &apos;java-app/target/surefire-reports/TEST-com.mycompany.app.AppTest.xml&apos;: Permission denied
+error: unable to unlink old &apos;java-app/target/surefire-reports/com.mycompany.app.AppTest.txt&apos;: Permission denied
+error: unable to unlink old &apos;java-app/target/test-classes/com/mycompany/app/AppTest.class&apos;: Permission denied
+Previous HEAD position was 7f63fb0... Initial commit
+HEAD is now at 3cf8b77... Testing
+</detailMessage>
+          <stackTrace>
+            <trace>org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2042)</trace>
+            <trace>org.jenkinsci.plugins.gitclient.CliGitAPIImpl.access$900(CliGitAPIImpl.java:72)</trace>
+            <trace>org.jenkinsci.plugins.gitclient.CliGitAPIImpl$9.execute(CliGitAPIImpl.java:2341)</trace>
+            <trace>hudson.plugins.git.GitSCM.checkout(GitSCM.java:1242)</trace>
+            <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep.checkout(SCMStep.java:120)</trace>
+            <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep$StepExecutionImpl.run(SCMStep.java:90)</trace>
+            <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep$StepExecutionImpl.run(SCMStep.java:77)</trace>
+            <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:47)</trace>
+            <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+            <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+            <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+            <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+            <trace>java.lang.Thread.run(Thread.java:748)</trace>
+          </stackTrace>
+          <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+            <c class="list"/>
+            <list reference="../c"/>
+          </suppressedExceptions>
+        </cause>
+        <stackTrace>
+          <trace>org.jenkinsci.plugins.gitclient.CliGitAPIImpl$9.execute(CliGitAPIImpl.java:2365)</trace>
+          <trace>hudson.plugins.git.GitSCM.checkout(GitSCM.java:1242)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep.checkout(SCMStep.java:120)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep$StepExecutionImpl.run(SCMStep.java:90)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.scm.SCMStep$StepExecutionImpl.run(SCMStep.java:77)</trace>
+          <trace>org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:47)</trace>
+          <trace>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)</trace>
+          <trace>java.util.concurrent.FutureTask.run(FutureTask.java:266)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</trace>
+          <trace>java.lang.Thread.run(Thread.java:748)</trace>
+        </stackTrace>
+        <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" reference="../cause/suppressedExceptions"/>
+      </error>
+    </wf.a.ErrorAction>
+  </actions>
+</Tag>

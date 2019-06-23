@@ -1,0 +1,14 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-05-20 00:16:44.344 UTC</timestamp>
+  <md5sum>edc15906f0781046ebef3de63a8cd591</md5sum>
+  <fileName>Credential id=b49dd3af-e316-410b-9867-252882d01189 name=admin/******</fileName>
+  <usages/>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@2.1.18">
+      <timestamp>1558311404338</timestamp>
+      <itemFullName>pipeline-docker-maven</itemFullName>
+      <timestamp0>1558311404338</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>

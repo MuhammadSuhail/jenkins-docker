@@ -1,0 +1,8 @@
+Started by user [8mha:////4KTd2yQHTvOOosrLp0qifakasHt7Dkpd1L1cZskp7mRdAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZu/dLi1CL9xJTczDwAHhAahcAAAAA=[0mjenkins
+Building in workspace /var/jenkins_home/workspace/HelloWorldJob
+[HelloWorldJob] $ /bin/sh -xe /tmp/jenkins4878575256811440115.sh
++ Name=Muhammad
++ Time=12
++ /tmp/script.sh Muhammad 12
+My name is Muhammad and current Date and Time is 12
+Finished: SUCCESS

@@ -1,0 +1,9 @@
+Started by user [8mha:////4KTd2yQHTvOOosrLp0qifakasHt7Dkpd1L1cZskp7mRdAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZu/dLi1CL9xJTczDwAHhAahcAAAAA=[0mjenkins
+Building in workspace /var/jenkins_home/workspace/HelloWorldJob
+[HelloWorldJob] $ /bin/sh -xe /tmp/jenkins1540353820228861952.sh
++ /tmp/script.sh Muhammmad12Suhail 15
+/tmp/script.sh: 4: /tmp/script.sh: if[: not found
+My name is Muhammmad12Suhail and current Date and Time is 15
+/tmp/script.sh: 6: /tmp/script.sh: Syntax error: "else" unexpected
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

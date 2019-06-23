@@ -1,0 +1,8 @@
+Started by user [8mha:////4KTd2yQHTvOOosrLp0qifakasHt7Dkpd1L1cZskp7mRdAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZu/dLi1CL9xJTczDwAHhAahcAAAAA=[0mjenkins
+Building in workspace /var/jenkins_home/workspace/HelloWorldJob
+[HelloWorldJob] $ /bin/sh -xe /tmp/jenkins3559995672338316271.sh
++ /tmp/script.sh MuhammmadSuhail 12 false
+false
+My name is 
+turn on please
+Finished: SUCCESS
